@@ -1,0 +1,28 @@
+{
+  "name": "its-a-date-frontend",
+  "version": "1.0.0",
+  "description": "Grants its-a-date project UI support",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skatz1990/its-a-date-frontend.git"
+  },
+  "keywords": [
+    "its-a-date",
+    "its-a-date frontend"
+  ],
+  "author": "Shahar Katz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skatz1990/its-a-date-frontend/issues"
+  },
+  "homepage": "https://github.com/skatz1990/its-a-date-frontend#readme"
+}
