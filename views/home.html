@@ -1,0 +1,70 @@
+<div class="wrapper page-header">
+	<h1>It's-A-Date</h1>
+	<p class="lead">The following method allows you to test its-a-date online</p>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Type your date string below</h3>
+	</div>
+	<div class="panel-body">
+		<input type="text" placeholder="Date string" name="dateString" class="form-control" ng-model="dateString">
+
+		<form class="form-signin">
+			<div class="checkbox">
+				<label>
+                    <input type="checkbox" name="dayBeforeMonth" ng-model="dayBeforeMonth">Day before month
+                </label>
+			</div>
+			<button class="btn-lg black-background btn-block" type="submit" ng-click="submit()">Submit</button>
+		</form>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Result</h3>
+	</div>
+	<div class="panel-body">
+		<div class="col-lg-7">
+			<table class="table table-striped">
+				<tbody>
+					<tr>
+						<td>Year</td>
+						<td data-ng-bind="result.year"></td>
+					</tr>
+					<tr>
+						<td>Month</td>
+						<td data-ng-bind="result.month"></td>
+					</tr>
+					<tr>
+						<td>Day</td>
+						<td data-ng-bind="result.day"></td>
+					</tr>
+					<tr>
+						<td>Hour</td>
+						<td data-ng-bind="result.hour"></td>
+					</tr>
+					<tr>
+						<td>Minute</td>
+						<td data-ng-bind="result.minute"></td>
+					</tr>
+					<tr>
+						<td>Day of the Week</td>
+						<td data-ng-bind="result.week_day"></td>
+					</tr>
+					<tr>
+						<td>Full Date</td>
+						<td data-ng-bind="result.full_date"></td>
+					</tr>
+					<tr>
+						<td>Used Format</td>
+						<td data-ng-bind="result.used_format"></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+	</div>
+</div>

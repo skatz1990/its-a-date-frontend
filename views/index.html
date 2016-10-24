@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="manager">
+
+<head>
+
+	<title>Its-A-Date Frontend</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<!-- javascripts -->
+
+	<script src="/angular/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="/controllers/homeController.js"></script>
+
+	<!-- end scripts -->
+</head>
+
+<body class="appBody">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#/home">Its-A-Date</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#/home">Home</a></li>
+					<li><a href="https://github.com/bendorshai/its-a-date" target="_blank">Its-A-Date on Github</a></li>
+					<li><a href="https://github.com/skatz1990/its-a-date-frontend" target="_blank">Its-A-Date Frontend on Github</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div ng-view></div>
+	</div>
+
+</body>
+
+<!--<footer class="footer">
+	<div class="container">
+		<p class="text-muted"> Contributions are always welcome via pull requests and issues.</p>
+	</div>
+</footer>-->
+
+</html>
