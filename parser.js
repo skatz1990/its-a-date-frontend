@@ -7,7 +7,7 @@ exports.parse = function (dateString, dayBeforeMonth) {
 
     return {
         "year": result.getFullYear(),
-        "month": result.getMonth(),
+        "month": result.getMonth() + 1,
         "day": result.getDate(),
         "hour": result.getHours(),
         "minute": result.getMinutes(),
@@ -45,13 +45,13 @@ function FullFormat(result, dayBeforeMonth) {
     if (dayBeforeMonth) {
         format =
             result.getDate() + "/" +
-            result.getMonth() + "/" +
+            parseInt(result.getMonth() + 1) + "/" +
             result.getFullYear() + " " +
             result.getHours() + ":" +
             result.getMinutes();
     } else {
         format =
-            result.getMonth() + "/" +
+            parseInt(result.getMonth() + 1) + "/" +
             result.getDate() + "/" +
             result.getFullYear() + " " +
             result.getHours() + ":" +

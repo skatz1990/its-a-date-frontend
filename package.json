@@ -6,7 +6,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "its-a-date": "^1.2.2"
+    "its-a-date": "^1.2.5"
   },
   "devDependencies": {},
   "scripts": {
